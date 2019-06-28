@@ -7,8 +7,8 @@ export class PlanetYears {
     this.jupiterAge = jupiterYears;
   }
 
-  checkYear(change) {
-    if (this.age + change = this.mercuryAge) {
+  checkYear(planetAge) {
+    if (this.age + planetAge = this.mercuryAge) {
        this.age = this.mercuryAge;
        return this.age
     }
