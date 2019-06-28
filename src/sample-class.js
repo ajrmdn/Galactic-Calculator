@@ -26,7 +26,27 @@ export class PlanetAge {
 }
 export class DoomsDay {
   constructor(yearsLeft) {
-    this.dateLiteral = yearsLeft;
+    this.yearsLeft = yearsLeft;
+    this.mercuryDeath = this.getMercuryDeath(yearsLeft)
+    this.venusDeath = this.getVenusDeath(yearsLeft)
+    this.marsDeath = this.getMarsDeath(yearsLeft)
+    this.jupiterDeath = this.getJupiterDeath(yearsLeft)
+  }
+
+  getMercuryDeath(yearsLeft) {
+    return age * 0.24;
+  }
+
+  getVenusDeath(yearsLeft) {
+    return age * 0.62;
+  }
+
+  getMarsDeath(yearsLeft) {
+    return age * 1.88;
+  }
+
+  getJupiterDeath(yearsLeft) {
+    return age * 11.86;
   }
 
   returnD() {
