@@ -6,13 +6,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 $(document).ready(function () {
 
- $('#yearForm').submit(function (event) {
+ $('#galacticYears').submit(function (event) {
    event.preventDefault();
    const userAge = $('#ageInput').val();
+   const
 
-   // const stringLiteral = userAge;
-   // const finalAge = new PlanetYears(stringLiteral)
-   //
-   // $('.output').text(finalDay.returnDay());
+
+   const yearsToLive = ;
+   const deathAge = new DoomsDay(yearsToLive);
+
+   $('.output').text(deathAge.returnYearsLeft());
  });
 });

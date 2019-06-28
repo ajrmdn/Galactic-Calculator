@@ -32,5 +32,7 @@ export class DoomsDay {
    const Years = [];
    const date = new Date(this.yearsLeft);
    return Years[date.getYear()];
+  }
+  }
  }
 }
