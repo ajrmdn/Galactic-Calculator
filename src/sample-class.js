@@ -1,16 +1,26 @@
 export class PlanetYears {
-  constructor(mercuryYears, venusYears, marsYears, jupiterYears) {
-    this.age = [];
-    this.mercuryAge = mercuryYears;
-    this.venusAge = venusYears;
-    this.marsAge = marsYears;
-    this.jupiterAge = jupiterYears;
+  constructor(age) {
+    this.age = age;
+    this.mercuryAge = this.getMercuryAge(age);
+    this.venusAge = this.getVenusAge(age);
+    this.marsAge = this.getMarsAge(age);
+    this.jupiterAge = this.getJupiterAge(age);
   }
 
-  checkYear(planetAge) {
-    if (this.age + planetAge === this.mercuryAge) {
-       this.age = this.mercuryAge;
-       return ageInput *(.24)
-    }
+  getMercuryAge(age) {
+    return age * 0.24;
   }
+
+  getVenusAge(age) {
+    return age * 0.62;
+  }
+
+  getMarsAge(age) {
+    return age * 1.88;
+  }
+
+  getJupiterAge(age) {
+    return age * 11.86;
+  }
+
 }
