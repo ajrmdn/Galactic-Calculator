@@ -1,4 +1,5 @@
 import { PlanetAge } from './sample-class.js';
+import { DoomsDay } from './sample-class.js';
 import './styles.css';
 import $ from 'jquery';
 import 'bootstrap';
@@ -8,11 +9,10 @@ $(document).ready(function () {
 
  $('#galacticYears').submit(function (event) {
    event.preventDefault();
-   const userAge = $('#ageInput').val();
-   const
+   const userDeath = $('#planetAgeInput').val();
 
 
-   const yearsToLive = ;
+   const yearsToLive = userDeath  ;
    const deathAge = new DoomsDay(yearsToLive);
 
    $('.output').text(deathAge.returnYearsLeft());

@@ -23,16 +23,14 @@ export class PlanetAge {
     return age * 11.86;
   }
 
-export class DoomsDay {
-  constructor(years) {
-    this.yearsLeft = years;
-  }
-
-  returnYears() {
-   const Years = [];
-   const date = new Date(this.yearsLeft);
-   return Years[date.getYear()];
-  }
-  }
+// export class DoomsDay {
+//   constructor(years) {
+//     this.yearsLeft = years;
+//   }
+//
+//   returnYears() {
+//    const Years = [];
+//    const date = new Date(this.yearsLeft);
+//    return Years[date.getYear()];
+//   }
  }
-}
