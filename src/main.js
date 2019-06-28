@@ -9,7 +9,7 @@ $(document).ready(function () {
 
  $('#galacticYears').submit(function (event) {
    event.preventDefault();
-   const userDeath = $('#planetAgeInput').val();
+   const userDeath = $('#demoAgeInput').val();
 
 
    const yearsToLive = userDeath  ;

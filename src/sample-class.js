@@ -26,6 +26,7 @@ export class PlanetAge {
 // export class DoomsDay {
 //   constructor(years) {
 //     this.yearsLeft = years;
+//     this.demo =
 //   }
 //
 //   returnYears() {

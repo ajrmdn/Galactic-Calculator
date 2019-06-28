@@ -16,10 +16,10 @@ _This is a planet year calculator that allows a user to input their age and see 
 | Should test whether a users age on venus changes to venus years | 30 | 18.6 |
 | Should test whether a users age on mars changes to mars years | 30 | 56.4 |
 | Should test whether a users age on jupiter changes to jupiter years | 30 | 355.8 |
-| Should test whether a users years left on mercury changes to mercury death age | 30 | ??? |
-| Should test whether a users years left on venus changes to venus death age | 30 | ??? |
-| Should test whether a users years left on mars changes to mars death age| 30 | ??? |
-| Should test whether a users years left on jupiter changes to jupiter death age | 30 | ??? |
+| Should test whether a users years left on mercury changes to mercury death age | demo age |  |
+| Should test whether a users years left on venus changes to venus death age | demo age |  |
+| Should test whether a users years left on mars changes to mars death age| demo age |  |
+| Should test whether a users years left on jupiter changes to jupiter death age | demo age | 0 |
 
 
 ## Setup/Installation
