@@ -24,3 +24,14 @@ export class PlanetAge {
   }
 
 }
+export class DoomsDay {
+  constructor(yearsLeft) {
+    this.dateLiteral = yearsLeft;
+  }
+
+  returnD() {
+    const DAYS_OF_WEEK = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    const d = new Date(this.dateLiteral);
+    return DAYS_OF_WEEK[date.getDay()];
+  }
+}
