@@ -1,12 +1,12 @@
-# _RPG Game_
+# _Galactic Calculator_
 
-#### _A RPG game, 6-27-2019_
+#### _Galactic Calculator, 6-28-2019_
 
-#### _Author: Alex Siegberg & Abdellah Ramadan_
+#### _Abdellah Ramadan_
 
 ## Description
 
-_This is an RPG game that allows a user to customize a game character, basic health and mana system has been implemented._
+_This is a planet year calculator that allows a user to input their age and see how old they would be, for example, on mars.
 
 ## Spec
 
