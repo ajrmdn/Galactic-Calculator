@@ -23,17 +23,14 @@ export class PlanetAge {
     return age * 11.86;
   }
 
-}
 export class DoomsDay {
   constructor(years) {
-    this.yearsLeft = year;
+    this.yearsLeft = years;
   }
 
-  const date = new Date(this.death);
-
-  returnD() {
-    const DAYS_OF_WEEK = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-
-    return DAYS_OF_WEEK[date.getDay()];
-  }
+  returnYears() {
+   const Years = [];
+   const date = new Date(this.yearsLeft);
+   return Years[date.getYear()];
+ }
 }
