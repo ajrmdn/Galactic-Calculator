@@ -1,4 +1,4 @@
-export class PlanetYears {
+export class PlanetAge {
   constructor(age) {
     this.age = age;
     this.mercuryAge = this.getMercuryAge(age);

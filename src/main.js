@@ -1,4 +1,4 @@
-import { PlanetYears } from './sample-class.js';
+import { PlanetAge } from './sample-class.js';
 import './styles.css';
 import $ from 'jquery';
 import 'bootstrap';
@@ -10,9 +10,9 @@ $(document).ready(function () {
    event.preventDefault();
    const userAge = $('#ageInput').val();
 
-   const stringLiteral = userAge;
-   const finalAge = new PlanetYears(stringLiteral)
-
-   $('.output').text(finalDay.returnDay());
+   // const stringLiteral = userAge;
+   // const finalAge = new PlanetYears(stringLiteral)
+   //
+   // $('.output').text(finalDay.returnDay());
  });
 });
