@@ -1,12 +1,13 @@
-
 export class PlanetYears {
   constructor(mercuryYears, venusYears, marsYears, jupiterYears) {
-    this.dateLiteral = date;
+    this.age = []
+    this.mercuryAge = mercuryYears;
+    this.venusAge = venusYears;
+    this.marsAge = marsYears;
+    this.jupiterAge = jupiterYears;
   }
 
-  returnDay() {
-    const DAYS_OF_WEEK = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    const date = new Date(this.dateLiteral);
-    return DAYS_OF_WEEK[date.getDay()];
+  checkYear(change) {
+    if (this.)
   }
 }
