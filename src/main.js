@@ -9,5 +9,5 @@ $(document).ready(function() {
  $('#yearForm').submit(function (event) {
    event.preventDefault();
    const userAge = $('#ageInput').val();
- }
+ });
 });
