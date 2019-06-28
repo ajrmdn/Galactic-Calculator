@@ -10,7 +10,7 @@ export class PlanetYears {
   checkYear(planetAge) {
     if (this.age + planetAge = this.mercuryAge) {
        this.age = this.mercuryAge;
-       return this.age
+       return this.age *(.24)
     }
   }
 }
