@@ -25,33 +25,15 @@ export class PlanetAge {
 
 }
 export class DoomsDay {
-  constructor(yearsLeft) {
-    this.yearsLeft = yearsLeft;
-    this.mercuryDeath = this.getMercuryDeath(yearsLeft)
-    this.venusDeath = this.getVenusDeath(yearsLeft)
-    this.marsDeath = this.getMarsDeath(yearsLeft)
-    this.jupiterDeath = this.getJupiterDeath(yearsLeft)
+  constructor(years) {
+    this.yearsLeft = year;
   }
 
-  getMercuryDeath(yearsLeft) {
-    return age * 0.24;
-  }
-
-  getVenusDeath(yearsLeft) {
-    return age * 0.62;
-  }
-
-  getMarsDeath(yearsLeft) {
-    return age * 1.88;
-  }
-
-  getJupiterDeath(yearsLeft) {
-    return age * 11.86;
-  }
+  const date = new Date(this.death);
 
   returnD() {
     const DAYS_OF_WEEK = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    const d = new Date(this.dateLiteral);
+
     return DAYS_OF_WEEK[date.getDay()];
   }
 }
