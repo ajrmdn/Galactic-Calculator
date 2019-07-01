@@ -8,30 +8,52 @@ export class PlanetAge {
   }
 
   getMercuryAge(age) {
-    return age * 0.24;
+    return Math.floor(age * 0.24);
   }
 
   getVenusAge(age) {
-    return age * 0.62;
+    return Math.floor(age * 0.62);
   }
 
   getMarsAge(age) {
-    return age * 1.88;
+    return Math.floor(age * 1.88);
   }
 
   getJupiterAge(age) {
-    return age * 11.86;
+    return Math.floor(age * 11.86);
+  }
+}
+
+export class DoomsDay {
+  constructor(ageInput, lifeExpectancyInput) {
+    this.lifeExpectancy = lifeExpectancyInput;
+    this.age = ageInput;
+    this.mercuryYearsLeft = this.getMercuryYearsLeft(ageInput, lifeExpectancyInput);
+    this.venusYearsLeft = this.getVenusYearsLeft(ageInput, lifeExpectancyInput);
+    // this.marsYearsLeft = this.getMarsYearsLeft(ageInput, lifeExpectancyInput);
+    //
+    // // this.jupiterYearsLeft = this.getJupiterYearsLeft(ageInput, lifeExpectancyInput);
   }
 
-// export class DoomsDay {
-//   constructor(years) {
-//     this.yearsLeft = years;
-//     this.demo =
-//   }
-//
-//   returnYears() {
-//    const Years = [];
-//    const date = new Date(this.yearsLeft);
-//    return Years[date.getYear()];
-//   }
- }
+  getMercuryYearsLeft(ageInput, lifeExpectancyInput) {
+    const mercuryExpectancy = Math.round(lifeExpectancyInput * 0.24);
+    const mercuryAge = Math.round(ageInput * 0.24);
+    const yearsLeft = mercuryExpectancy - mercuryAge;
+    if (ageInput > lifeExpectancyInput) {
+      return Math.abs(yearsLeft);
+    } else {
+      return yearsLeft;
+    }
+  }
+
+  getVenusYearsLeft(ageInput, lifeExpectancyInput) {
+    const venusExpectancy = Math.round(lifeExpectancyInput * 0.62);
+    const venusAge = Math.round(ageInput * 0.62);
+    const yearsLeft = venusExpectancy - venusAge;
+    if (ageInput > lifeExpectancyInput) {
+      return Math.abs(yearsLeft);
+    } else {
+      return yearsLeft;
+    }
+  }
+}
