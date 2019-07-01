@@ -18,12 +18,12 @@ _This is a planet year calculator that allows a user to input their age and see 
 | will calculate age on planet jupiter    |   30  |   356  |
 | will calculate how many years left on mercury  |   30  |   11   |
 | will calculate how many years left on venus    |   30  |   29   |
-| will calculate how many years left on mars     |   30  |   1    |
-| will calculate how many years left on jupiter  |   30  |   338  |
+| will calculate how many years left on mars     |   30  |   89    |
+| will calculate how many years left on jupiter  |   30  |   557  |
 | will calculate how many years passed life expectancy on mercury  |   30  |   6   |
-| will calculate how many years passed life expectancy on venus    |   30  |   44  |
-| will calculate how many years passed life expectancy on mars     |   30  |  170  |
-| will calculate how many years passed life expectancy on jupiter  |   30  |  1168 |
+| will calculate how many years passed life expectancy on venus    |   30  |   14  |
+| will calculate how many years passed life expectancy on mars     |   30  |  43  |
+| will calculate how many years passed life expectancy on jupiter  |   30  |  273 |
 
 
 
