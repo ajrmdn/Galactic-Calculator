@@ -6,5 +6,7 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 $(document).ready(function () {
- $('#galacticYears').submit(function (event) {
-   event.preventDefault();
+  $('#galacticYears').submit(function (event) {
+    event.preventDefault();
+  });
+});
