@@ -30,9 +30,8 @@ export class DoomsDay {
     this.age = ageInput;
     this.mercuryYearsLeft = this.getMercuryYearsLeft(ageInput, lifeExpectancyInput);
     this.venusYearsLeft = this.getVenusYearsLeft(ageInput, lifeExpectancyInput);
-    // this.marsYearsLeft = this.getMarsYearsLeft(ageInput, lifeExpectancyInput);
-    //
-    // // this.jupiterYearsLeft = this.getJupiterYearsLeft(ageInput, lifeExpectancyInput);
+    this.marsYearsLeft = this.getMarsYearsLeft(ageInput, lifeExpectancyInput);
+    this.jupiterYearsLeft = this.getJupiterYearsLeft(ageInput, lifeExpectancyInput);
   }
 
   getMercuryYearsLeft(ageInput, lifeExpectancyInput) {
@@ -56,4 +55,29 @@ export class DoomsDay {
       return yearsLeft;
     }
   }
+
+  getMarsYearsLeft(ageInput, lifeExpectancyInput) {
+    const marsExpectancy = Math.round(lifeExpectancyInput * 1.88);
+    const marsAge = Math.round(ageInput * 1.88);
+    const yearsLeft = marsExpectancy - marsAge;
+    if (ageInput > lifeExpectancyInput) {
+      return Math.abs(yearsLeft);
+    } else {
+      return yearsLeft;
+    }
+  }
+
+  getJupiterYearsLeft(ageInput, lifeExpectancyInput) {
+    const jupiterExpectancy = Math.round(lifeExpectancyInput * 11.86);
+    const jupiterAge = Math.round(ageInput * 11.86);
+    const yearsLeft = jupiterExpectancy - jupiterAge;
+    if (ageInput > lifeExpectancyInput) {
+      return Math.abs(yearsLeft);
+    } else {
+      return yearsLeft;
+    }
+  }
+
+
+
 }

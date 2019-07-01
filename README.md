@@ -10,16 +10,21 @@ _This is a planet year calculator that allows a user to input their age and see 
 
 ## Spec
 
-|                          Behavior                          |        Input       |    Output |
-| ---------------------------------------------------------- |:------------------:| ---------:|
-| Should test whether a users age on mercury changes to mercury years | 30 | 7.2 |
-| Should test whether a users age on venus changes to venus years | 30 | 18.6 |
-| Should test whether a users age on mars changes to mars years | 30 | 56.4 |
-| Should test whether a users age on jupiter changes to jupiter years | 30 | 355.8 |
-| Should test whether a users years left on mercury changes to mercury death age | demo age |  |
-| Should test whether a users years left on venus changes to venus death age | demo age |  |
-| Should test whether a users years left on mars changes to mars death age| demo age |  |
-| Should test whether a users years left on jupiter changes to jupiter death age | demo age | 0 |
+|       Behavior                          | Input | Output |
+| --------------------------------------- |:-----:| ------:|
+| will calculate age on planet mercury    |   30  |   7    |
+| will calculate age on planet venus      |   30  |   19   |
+| will calculate age on planet mars       |   30  |   56   |
+| will calculate age on planet jupiter    |   30  |   356  |
+| will calculate how many years left on mercury  |   30  |   11   |
+| will calculate how many years left on venus    |   30  |   29   |
+| will calculate how many years left on mars     |   30  |   1    |
+| will calculate how many years left on jupiter  |   30  |   338  |
+| will calculate how many years passed life expectancy on mercury  |   30  |   6   |
+| will calculate how many years passed life expectancy on venus    |   30  |   44  |
+| will calculate how many years passed life expectancy on mars     |   30  |  170  |
+| will calculate how many years passed life expectancy on jupiter  |   30  |  1168 |
+
 
 
 ## Setup/Installation
